@@ -114,3 +114,76 @@ body{
 .container .row .col-2 .btn:hover{
     background-color: #7a191b;
 }
+
+.col-2 .ring img {
+    width: 100%;
+    max-width: 580px;
+}
+
+#circle-ring{
+    padding-left: 130px;
+    padding-top: 60px;    
+}
+
+.col-2 .ring{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    border: 3px solid #3c3c3c;
+    border-radius: 50%;
+    z-index: -1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.col-2 .ring::before{
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 3px solid #fff12e;
+    border-right: 3px solid #fff12e;
+    z-index: -1;
+    border-radius: 50%;
+    animation: returnCircle 10s linear infinite;
+}
+
+.col-2 .ring .circle{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 4px;
+    background: #fff12e;
+    transform-origin: left;
+    animation: return 10s linear infinite;
+}
+
+.col-2 .ring .circle:before{
+    content: "" ;
+    position: absolute;
+    top: -6px;
+    right: -9px;
+    width: 16px;
+    height: 16px;
+    background: #fff12e;
+    z-index: -1;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #fff12e;
+}
+
+
+
+
+
+
+
+
+
+@keyframes returnCircle {
+    
+}
