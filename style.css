@@ -25,3 +25,38 @@ body{
     justify-content: space-between;
     padding: 20px;
 }
+
+.container .header:before{
+    content: "ADIDAS";
+    position: absolute;
+    top: 58%;
+    left: 57%;
+    color: rgba(180, 164, 164, 0.603);
+    font-size: 150px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    opacity: 0.1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container .header i{
+    color: #ffff;
+    cursor: pointer;
+}
+
+.container .header p{
+    color: #ffff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.container .header .logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container .header .line{
+    
+}
