@@ -57,6 +57,17 @@ body{
     cursor: pointer;
 }
 
-.container .header .line{
-    
+.container .header .logo-two{
+    height: 10px;
 }
+.container .header .line{
+    display: block;
+    width: 45px;
+    height: 2px;
+    background-color: #ffff;
+    margin-bottom: 4px;
+    margin-right: 4px;
+}
+
+/*  ROW SECTİON */
+
