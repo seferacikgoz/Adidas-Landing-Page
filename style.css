@@ -71,3 +71,46 @@ body{
 
 /*  ROW SECTİON */
 
+.container .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container .col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.container .row .col-2 h1{
+    color: #ffff;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    margin: 25px;
+}
+
+.container .row .col-2 p{
+    color: #ffff;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.container .row .col-2 .btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffff;
+    padding: 8px 20px;
+    background-color: #E04848;
+    border-radius: 35px;
+    margin-top: 45px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 1s all ease;
+}
+
+.container .row .col-2 .btn:hover{
+    background-color: #7a191b;
+}
