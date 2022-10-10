@@ -199,13 +199,32 @@ body{
     border-bottom: 3px solid #fff12e;
     border-left: 3px solid #fff12e;
     border-radius: 50%;
-    animation: animateCircle2 10s linear infinite;
+    animation: returnCircle2 10s linear infinite;
 }
 
+.col-2 .ring-two .circle-two{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 4px;
+    background: transparent
+    transform-origin: left;
+    animation: return2 10s linear infinite;
+}
 
-
-
-
+.col-2 .ring-two .circle-two:before{
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    width: 16px;
+    height: 16px;
+    background: #fff12e;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #fff12e;
+}
 
 
 @keyframes returnCircle {
@@ -223,5 +242,23 @@ body{
     }
     100%{
         transform: rotate(405deg);
+    }
+}
+
+@keyframes returnCircle2 {
+    0%{
+        transform: rotate(-45deg);
+    }
+    100%{
+        transform: rotate(-405deg);
+    }
+}
+
+@keyframes return2{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
     }
 }
